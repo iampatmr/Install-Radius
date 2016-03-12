@@ -41,3 +41,8 @@ apt-get install build-essential libssl-dev php5-gd freeradius freeradius-mysql f
 
 echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
  sudo a2enconf fqdn
+
+service apache2 stop
+service freeradius stop
+
+/etc/init.d/apache2 force-reload

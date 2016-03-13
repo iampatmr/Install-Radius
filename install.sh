@@ -17,6 +17,10 @@ echo "##                                                          ##"
 echo "##############################################################"
 
 sleep 10
+echo "   "
+echo "   "
+echo "   "
+echo "   "
 
 # Ready Install
 
@@ -31,9 +35,17 @@ echo "[#######################################################################  
 sleep 8
 echo "[###############################################################################] 100%"
 sleep 9
+echo "   "
+echo "   "
+echo "   "
+
 echo "Prepare a successful installation"
 sleep 10
 
+echo "   "
+echo "   "
+echo "   "
+echo "   "
 
 # Start Install 
 
@@ -44,7 +56,7 @@ echo "#               P&M Soft Radius For Mikrotik                 #"
 echo "#                                                            #"
 echo "##############################################################"
 
-sleep20
+sleep 20
 #apt-get install -y
 #apt-get install build-essential libssl-dev php5-gd freeradius freeradius-mysql freeradius-utils libapache2-mod-auth-mysql ssl-cert php5-curl php5-cli iptables php5 php5-common php5-gd php-pear php-db libapache2-mod-php5 php5-mysql phpmyadmin
 

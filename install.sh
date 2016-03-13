@@ -16,25 +16,24 @@ echo "##                   versions 1.0 Beta                      ##"
 echo "##                                                          ##"
 echo "##############################################################"
 
-sleep10
+sleep 10
 
-clear
 # Ready Install
 
-Ready Install 
+echo "Ready Install"
 echo "[######################                                                         ] 25%"
-sleep10
+sleep 5
 echo "[####################################                                           ] 45%"
-sleep10
+sleep 6
 echo "[###########################################################                    ] 75%"
-sleep10
+sleep 7
 echo "[#######################################################################        ] 85%"
-sleep10
+sleep 8
 echo "[###############################################################################] 100%"
-sleep10
-Prepare a successful installation
-sleep10
-clear
+sleep 9
+echo "Prepare a successful installation"
+sleep 10
+
 
 # Start Install 
 

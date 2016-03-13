@@ -23,10 +23,15 @@ clear
 
 Ready Install 
 echo "[######################                                                         ] 25%"
+sleep10
 echo "[####################################                                           ] 45%"
+sleep10
 echo "[###########################################################                    ] 75%"
+sleep10
 echo "[#######################################################################        ] 85%"
+sleep10
 echo "[###############################################################################] 100%"
+
 sleep10
 
 clear
@@ -40,13 +45,14 @@ echo "#               P&M Soft Radius For Mikrotik                 #"
 echo "#                                                            #"
 echo "##############################################################"
 
-apt-get install -y
-apt-get install build-essential libssl-dev php5-gd freeradius freeradius-mysql freeradius-utils libapache2-mod-auth-mysql ssl-cert php5-curl php5-cli iptables php5 php5-common php5-gd php-pear php-db libapache2-mod-php5 php5-mysql phpmyadmin
+sleep20
+#apt-get install -y
+#apt-get install build-essential libssl-dev php5-gd freeradius freeradius-mysql freeradius-utils libapache2-mod-auth-mysql ssl-cert php5-curl php5-cli iptables php5 php5-common php5-gd php-pear php-db libapache2-mod-php5 php5-mysql phpmyadmin
 
-echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
- sudo a2enconf fqdn
+#echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
+ #sudo a2enconf fqdn
 
-service apache2 stop
-service freeradius stop
+#service apache2 stop
+#service freeradius stop
 
-/etc/init.d/apache2 force-reload
+#/etc/init.d/apache2 force-reload

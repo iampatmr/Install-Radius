@@ -36,14 +36,10 @@ sleep 8
 echo "[###############################################################################] 100%"
 sleep 9
 echo "   "
-echo "   "
-echo "   "
 
 echo "Prepare a successful installation"
 sleep 10
 
-echo "   "
-echo "   "
 echo "   "
 echo "   "
 
@@ -57,13 +53,13 @@ echo "#                                                            #"
 echo "##############################################################"
 
 sleep 20
-#apt-get install -y
-#apt-get install build-essential libssl-dev php5-gd freeradius freeradius-mysql freeradius-utils libapache2-mod-auth-mysql ssl-cert php5-curl php5-cli iptables php5 php5-common php5-gd php-pear php-db libapache2-mod-php5 php5-mysql phpmyadmin
+apt-get install -y
+apt-get install build-essential libssl-dev php5-gd freeradius freeradius-mysql freeradius-utils libapache2-mod-auth-mysql ssl-cert php5-curl php5-cli iptables php5 php5-common php5-gd php-pear php-db libapache2-mod-php5 php5-mysql phpmyadmin
 
-#echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
- #sudo a2enconf fqdn
+ echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
+ sudo a2enconf fqdn
 
-#service apache2 stop
-#service freeradius stop
+service apache2 stop
+service freeradius stop
 
-#/etc/init.d/apache2 force-reload
+/etc/init.d/apache2 force-reload

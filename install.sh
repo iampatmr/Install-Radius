@@ -63,3 +63,16 @@ service apache2 stop
 service freeradius stop
 
 /etc/init.d/apache2 force-reload
+tar -C / -zxvf config.tar.gz
+chmod 0440 /etc/sudoers
+sleep 5
+
+clear
+
+echo "##############################################################"
+echo "#                 Install WebControl Panel                   #"
+echo "##############################################################"
+
+
+
+
